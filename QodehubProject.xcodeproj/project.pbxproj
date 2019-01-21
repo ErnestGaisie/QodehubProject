@@ -13,6 +13,11 @@
 		177A56A521F20C49002E7DF9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A56A321F20C49002E7DF9 /* Main.storyboard */; };
 		177A56A721F20C4B002E7DF9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 177A56A621F20C4B002E7DF9 /* Assets.xcassets */; };
 		177A56AA21F20C4B002E7DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A56A821F20C4B002E7DF9 /* LaunchScreen.storyboard */; };
+		177A56B221F291D9002E7DF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B121F291D9002E7DF9 /* LoginViewController.swift */; };
+		177A56B421F2920C002E7DF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B321F2920C002E7DF9 /* SignUpViewController.swift */; };
+		177A56B621F4BB4E002E7DF9 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */; };
+		17893A5A21F61F58004E0B62 /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A5921F61F58004E0B62 /* utilFunctions.swift */; };
+		AADBC55F3664A82385D37A92 /* Pods_QodehubProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		177A56A621F20C4B002E7DF9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		177A56A921F20C4B002E7DF9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		177A56AB21F20C4B002E7DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		177A56B121F291D9002E7DF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		177A56B321F2920C002E7DF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
+		17893A5921F61F58004E0B62 /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
+		4D2240C4A48F4EA8AAF694A4 /* Pods-QodehubProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.debug.xcconfig"; sourceTree = "<group>"; };
+		51DF39B4F761CF8299577CDB /* Pods-QodehubProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.release.xcconfig"; sourceTree = "<group>"; };
+		651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QodehubProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AADBC55F3664A82385D37A92 /* Pods_QodehubProject.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +55,8 @@
 			children = (
 				177A569C21F20C49002E7DF9 /* QodehubProject */,
 				177A569B21F20C49002E7DF9 /* Products */,
+				61E303D6A6EA883F96E7CBC9 /* Pods */,
+				532B916CE338FF822904293C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +74,33 @@
 				177A569D21F20C49002E7DF9 /* AppDelegate.swift */,
 				177A569F21F20C49002E7DF9 /* FirstViewController.swift */,
 				177A56A121F20C49002E7DF9 /* SecondViewController.swift */,
+				17893A5921F61F58004E0B62 /* utilFunctions.swift */,
 				177A56A321F20C49002E7DF9 /* Main.storyboard */,
+				177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */,
+				177A56B321F2920C002E7DF9 /* SignUpViewController.swift */,
+				177A56B121F291D9002E7DF9 /* LoginViewController.swift */,
 				177A56A621F20C4B002E7DF9 /* Assets.xcassets */,
 				177A56A821F20C4B002E7DF9 /* LaunchScreen.storyboard */,
 				177A56AB21F20C4B002E7DF9 /* Info.plist */,
 			);
 			path = QodehubProject;
+			sourceTree = "<group>";
+		};
+		532B916CE338FF822904293C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		61E303D6A6EA883F96E7CBC9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4D2240C4A48F4EA8AAF694A4 /* Pods-QodehubProject.debug.xcconfig */,
+				51DF39B4F761CF8299577CDB /* Pods-QodehubProject.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 177A56AE21F20C4B002E7DF9 /* Build configuration list for PBXNativeTarget "QodehubProject" */;
 			buildPhases = (
+				31F8C6B514051E9A88614069 /* [CP] Check Pods Manifest.lock */,
 				177A569621F20C49002E7DF9 /* Sources */,
 				177A569721F20C49002E7DF9 /* Frameworks */,
 				177A569821F20C49002E7DF9 /* Resources */,
+				EB3DF9D08D588797720A320B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +171,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31F8C6B514051E9A88614069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-QodehubProject-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EB3DF9D08D588797720A320B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		177A569621F20C49002E7DF9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				177A56B221F291D9002E7DF9 /* LoginViewController.swift in Sources */,
 				177A56A221F20C49002E7DF9 /* SecondViewController.swift in Sources */,
+				177A56B621F4BB4E002E7DF9 /* SideMenuVC.swift in Sources */,
 				177A569E21F20C49002E7DF9 /* AppDelegate.swift in Sources */,
 				177A56A021F20C49002E7DF9 /* FirstViewController.swift in Sources */,
+				17893A5A21F61F58004E0B62 /* utilFunctions.swift in Sources */,
+				177A56B421F2920C002E7DF9 /* SignUpViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +365,7 @@
 		};
 		177A56AF21F20C4B002E7DF9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2240C4A48F4EA8AAF694A4 /* Pods-QodehubProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -299,6 +383,7 @@
 		};
 		177A56B021F20C4B002E7DF9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51DF39B4F761CF8299577CDB /* Pods-QodehubProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
