@@ -36,12 +36,21 @@ class LoginViewController: UIViewController {
         .responseJSON{ response in
             
             var value = JSON(response.result.value!)
-            print("Yo")
-            print("\(value["data"]["user"][2])")
+          
         
-            if response.result.isSuccess == true  && value["success"] == "true"{
+            if  value["success"].stringValue == "true"{
+               
+                let alert = UIAlertController(title: "Your Name", message: "\(value["data"]["user"]["name"])", preferredStyle: .alert)
+                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
+                {
+                    UIAlertAction in
+                    alert.dismiss(animated: true, completion: nil)
+                })
+                self.present(alert,animated: true, completion: nil)
                 
-                navigateToPage(from: self, storyboardName: "Main", id: "tabBarControllerID")
+                return
+                
+               
             }
                 
                 else
