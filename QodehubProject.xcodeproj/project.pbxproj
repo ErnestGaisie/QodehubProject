@@ -15,8 +15,8 @@
 		177A56AA21F20C4B002E7DF9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 177A56A821F20C4B002E7DF9 /* LaunchScreen.storyboard */; };
 		177A56B221F291D9002E7DF9 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B121F291D9002E7DF9 /* LoginViewController.swift */; };
 		177A56B421F2920C002E7DF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B321F2920C002E7DF9 /* SignUpViewController.swift */; };
-		177A56B621F4BB4E002E7DF9 /* SideMenuVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */; };
 		17893A5A21F61F58004E0B62 /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A5921F61F58004E0B62 /* utilFunctions.swift */; };
+		17893A6021F88E36004E0B62 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */; };
 		AADBC55F3664A82385D37A92 /* Pods_QodehubProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,8 +31,8 @@
 		177A56AB21F20C4B002E7DF9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		177A56B121F291D9002E7DF9 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		177A56B321F2920C002E7DF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuVC.swift; sourceTree = "<group>"; };
 		17893A5921F61F58004E0B62 /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
+		17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		4D2240C4A48F4EA8AAF694A4 /* Pods-QodehubProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.debug.xcconfig"; sourceTree = "<group>"; };
 		51DF39B4F761CF8299577CDB /* Pods-QodehubProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.release.xcconfig"; sourceTree = "<group>"; };
 		651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QodehubProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,7 +76,7 @@
 				177A56A121F20C49002E7DF9 /* SecondViewController.swift */,
 				17893A5921F61F58004E0B62 /* utilFunctions.swift */,
 				177A56A321F20C49002E7DF9 /* Main.storyboard */,
-				177A56B521F4BB4E002E7DF9 /* SideMenuVC.swift */,
+				17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */,
 				177A56B321F2920C002E7DF9 /* SignUpViewController.swift */,
 				177A56B121F291D9002E7DF9 /* LoginViewController.swift */,
 				177A56A621F20C4B002E7DF9 /* Assets.xcassets */,
@@ -219,8 +219,8 @@
 			files = (
 				177A56B221F291D9002E7DF9 /* LoginViewController.swift in Sources */,
 				177A56A221F20C49002E7DF9 /* SecondViewController.swift in Sources */,
-				177A56B621F4BB4E002E7DF9 /* SideMenuVC.swift in Sources */,
 				177A569E21F20C49002E7DF9 /* AppDelegate.swift in Sources */,
+				17893A6021F88E36004E0B62 /* CustomTableViewCell.swift in Sources */,
 				177A56A021F20C49002E7DF9 /* FirstViewController.swift in Sources */,
 				17893A5A21F61F58004E0B62 /* utilFunctions.swift in Sources */,
 				177A56B421F2920C002E7DF9 /* SignUpViewController.swift in Sources */,
