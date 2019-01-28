@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func signInButtonPressed(_ sender: Any) {
         
         
@@ -37,20 +38,25 @@ class LoginViewController: UIViewController {
             
             var value = JSON(response.result.value!)
             
+        
+            
             
           
         
             if  value["success"].stringValue == "true"{
-               
-                let alert = UIAlertController(title: "Your Name", message: "\(value["data"]["user"]["name"])", preferredStyle: .alert)
-                alert.addAction(UIAlertAction(title: "Cancel", style: UIAlertActionStyle.cancel)
-                {
-                    UIAlertAction in
-                    alert.dismiss(animated: true, completion: nil)
-                })
-                self.present(alert,animated: true, completion: nil)
+                print("Yo")
+                print("\(value["data"]["access_token"])")
                 
-                return
+                let accessToken = "\(value["data"]["access_token"])"
+                print("HI")
+                print(accessToken)
+                
+                UserDefaults.standard.set(accessToken, forKey: "newAccess")
+                
+              
+               
+                UserDefaults.standard.set(true, forKey: "ISUSERLOGGEDIN")
+                navigateToPage(from: self, storyboardName: "Main", id: "tabBarControllerID")
                 
                
             }
@@ -69,6 +75,12 @@ class LoginViewController: UIViewController {
                     return
             
         }
+            
+         
+            
+            
+           
+        
             
          
     }

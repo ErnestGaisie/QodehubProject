@@ -20,6 +20,11 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     
     
     var ordersArray = [AnyObject]()
+   
+    
+        
+    
+    
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -42,7 +47,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let deliveryName = ordersArray[indexPath.row]["delivery_hall"]
         cell?.deliveryNameLabel.text = deliveryName as? String
         
-        let total = ordersArray[indexPath.row]["total"]
+        let total = ordersArray[indexPath.row]["total_amount"]
         cell?.totalLabel.text = total as? String
         
         let date = ordersArray[indexPath.row]["created_at"]
@@ -59,16 +64,10 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
-      
+        let accessToken = UserDefaults.standard.value(forKey: "newAccess") as! String
+        let Token = "Bearer" + accessToken
     
-       Alamofire.request("https://poba.tech/windelivery/public/api/v1/auth/login",
-                         method: .post,
-                         parameters:["phone":"0275799028",
-                                     "password":"secret",
-                                     "fcm_device_id":"kgfvluyt"])
-        .responseJSON { response in
-//            print(response)
-            let apiValue = JSON(response.result.value!)
+     
 //        let headers: [String:String] = [
 //            "Authorization": "Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6NjA2MFwvYXBpXC92MVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1NDcyMjMwNzcsImV4cCI6MTU3ODc1OTA3NywibmJmIjoxNTQ3MjIzMDc3LCJqdGkiOiJpY3dCVnRqTWtCWGl6TXloIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.eHhuVjNIQh67ZLQCZSH-nPI5lsEG94P82MI_21c5T3k",
 //            "Accept": "application/json",
@@ -80,7 +79,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
             Alamofire.request("https://poba.tech/windelivery/public/api/v1/orders",
                               method: .get,
                               encoding: JSONEncoding.default,
-                              headers: [ "Authorization": "Bearer \(apiValue["data"]["access_token"])"])
+                              headers: [ "Authorization": Token])
 //                .validate()
                 .responseJSON { response in
                     print(response)
@@ -89,14 +88,16 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                         print("Yo")
                         print(dict)
                         if let innerDict = dict["data"]{
+                          
                             self.ordersArray = innerDict as! [AnyObject]
                           self.tableView.reloadData()
                         }
+                       
                     }
                     
             }
             
-        }
+        
     }
         
     
