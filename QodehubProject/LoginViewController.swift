@@ -19,7 +19,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if UserDefaults.standard.bool(forKey: "ISUSERLOGGEDIN") == true {
+            navigateToPage(from: self, storyboardName: "Main", id: "tabBarControllerID")
+        }
     }
     
     

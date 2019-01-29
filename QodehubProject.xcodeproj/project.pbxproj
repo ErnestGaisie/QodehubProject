@@ -17,6 +17,9 @@
 		177A56B421F2920C002E7DF9 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 177A56B321F2920C002E7DF9 /* SignUpViewController.swift */; };
 		17893A5A21F61F58004E0B62 /* utilFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A5921F61F58004E0B62 /* utilFunctions.swift */; };
 		17893A6021F88E36004E0B62 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */; };
+		17893A8621FF7461004E0B62 /* Order.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A8521FF7460004E0B62 /* Order.swift */; };
+		17893A942200633A004E0B62 /* orderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A932200633A004E0B62 /* orderTableViewController.swift */; };
+		17893A96220074AF004E0B62 /* orderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17893A95220074AF004E0B62 /* orderTableViewCell.swift */; };
 		AADBC55F3664A82385D37A92 /* Pods_QodehubProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		177A56B321F2920C002E7DF9 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		17893A5921F61F58004E0B62 /* utilFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = utilFunctions.swift; sourceTree = "<group>"; };
 		17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		17893A8521FF7460004E0B62 /* Order.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Order.swift; sourceTree = "<group>"; };
+		17893A932200633A004E0B62 /* orderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderTableViewController.swift; sourceTree = "<group>"; };
+		17893A95220074AF004E0B62 /* orderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = orderTableViewCell.swift; sourceTree = "<group>"; };
 		4D2240C4A48F4EA8AAF694A4 /* Pods-QodehubProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.debug.xcconfig"; sourceTree = "<group>"; };
 		51DF39B4F761CF8299577CDB /* Pods-QodehubProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-QodehubProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-QodehubProject/Pods-QodehubProject.release.xcconfig"; sourceTree = "<group>"; };
 		651609389C67AB32DA1F31B3 /* Pods_QodehubProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_QodehubProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,16 +78,19 @@
 			isa = PBXGroup;
 			children = (
 				177A569D21F20C49002E7DF9 /* AppDelegate.swift */,
+				17893A8521FF7460004E0B62 /* Order.swift */,
 				177A569F21F20C49002E7DF9 /* FirstViewController.swift */,
 				177A56A121F20C49002E7DF9 /* SecondViewController.swift */,
-				17893A5921F61F58004E0B62 /* utilFunctions.swift */,
 				177A56A321F20C49002E7DF9 /* Main.storyboard */,
 				17893A5F21F88E36004E0B62 /* CustomTableViewCell.swift */,
 				177A56B321F2920C002E7DF9 /* SignUpViewController.swift */,
 				177A56B121F291D9002E7DF9 /* LoginViewController.swift */,
+				17893A5921F61F58004E0B62 /* utilFunctions.swift */,
 				177A56A621F20C4B002E7DF9 /* Assets.xcassets */,
 				177A56A821F20C4B002E7DF9 /* LaunchScreen.storyboard */,
 				177A56AB21F20C4B002E7DF9 /* Info.plist */,
+				17893A932200633A004E0B62 /* orderTableViewController.swift */,
+				17893A95220074AF004E0B62 /* orderTableViewCell.swift */,
 			);
 			path = QodehubProject;
 			sourceTree = "<group>";
@@ -217,8 +226,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17893A942200633A004E0B62 /* orderTableViewController.swift in Sources */,
 				177A56B221F291D9002E7DF9 /* LoginViewController.swift in Sources */,
 				177A56A221F20C49002E7DF9 /* SecondViewController.swift in Sources */,
+				17893A8621FF7461004E0B62 /* Order.swift in Sources */,
+				17893A96220074AF004E0B62 /* orderTableViewCell.swift in Sources */,
 				177A569E21F20C49002E7DF9 /* AppDelegate.swift in Sources */,
 				17893A6021F88E36004E0B62 /* CustomTableViewCell.swift in Sources */,
 				177A56A021F20C49002E7DF9 /* FirstViewController.swift in Sources */,

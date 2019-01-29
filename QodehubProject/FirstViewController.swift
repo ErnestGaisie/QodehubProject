@@ -53,12 +53,33 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let date = ordersArray[indexPath.row]["created_at"]
         cell?.dateLabel.text = date as? String
         
+     
+        
+       
+        
 
        
         
         return cell!
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let index = indexPath.row
+        //        navigateToPage(from:self,storyboardName: "Main", id: "vendorDetails")
+        let storyboard:UIStoryboard = UIStoryboard.init(name: "Main", bundle: nil)
+        
+        let vendorDetailsViewController = (storyboard.instantiateViewController(withIdentifier: "orderBarControllerID") as? orderTableViewController)!
+        
+        let newOrder = ordersArray[index]["id"]
+       
+        print("Yo")
+        print(newOrder!!)
+        
+        UserDefaults.standard.set(newOrder!, forKey: "order")
+       
+        
+        self.present(vendorDetailsViewController, animated: true, completion: nil)
+    }
 
     
     override func viewDidLoad() {
@@ -67,6 +88,8 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
         let accessToken = UserDefaults.standard.value(forKey: "newAccess") as! String
         let Token = "Bearer" + accessToken
     
+        
+        
      
 //        let headers: [String:String] = [
 //            "Authorization": "Bearer: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9sb2NhbGhvc3Q6NjA2MFwvYXBpXC92MVwvYXV0aFwvbG9naW4iLCJpYXQiOjE1NDcyMjMwNzcsImV4cCI6MTU3ODc1OTA3NywibmJmIjoxNTQ3MjIzMDc3LCJqdGkiOiJpY3dCVnRqTWtCWGl6TXloIiwic3ViIjoyLCJwcnYiOiI4N2UwYWYxZWY5ZmQxNTgxMmZkZWM5NzE1M2ExNGUwYjA0NzU0NmFhIn0.eHhuVjNIQh67ZLQCZSH-nPI5lsEG94P82MI_21c5T3k",
@@ -74,6 +97,7 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
 //            "Content-Type" :"application/json"
 //        ]
         
+     
         
 
             Alamofire.request("https://poba.tech/windelivery/public/api/v1/orders",
@@ -82,18 +106,23 @@ class FirstViewController: UIViewController,UITableViewDelegate,UITableViewDataS
                               headers: [ "Authorization": Token])
 //                .validate()
                 .responseJSON { response in
-                    print(response)
+                    
+               
+                    
                     let result = response.result
                     if let dict = result.value as? Dictionary<String,AnyObject>{
-                        print("Yo")
-                        print(dict)
+                        
+                        
                         if let innerDict = dict["data"]{
+                            
+                            
                           
                             self.ordersArray = innerDict as! [AnyObject]
                           self.tableView.reloadData()
                         }
                        
                     }
+                   
                     
             }
             

@@ -1,23 +1,16 @@
 //
-//  TableViewCell.swift
+//  orderTableViewCell.swift
 //  QodehubProject
 //
-//  Created by Ernest Gaisie on 22/01/2019.
+//  Created by Ernest Gaisie on 29/01/2019.
 //  Copyright © 2019 Ernest Gaisie. All rights reserved.
 //
 
 import UIKit
 
-class TableViewCell: UITableViewCell {
-  
-    @IBOutlet var orderLabel: UILabel!
-   
-    @IBOutlet var serviceLabel: UILabel!
-   
-    @IBOutlet var statusLabel: UILabel!
-   
-    @IBOutlet var dateLabel: UILabel!
-    
+class orderTableViewCell: UITableViewCell {
+
+    @IBOutlet var detailLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
